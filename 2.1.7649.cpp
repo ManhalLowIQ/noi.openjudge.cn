@@ -2,11 +2,19 @@
 using namespace std;
 int main()
 {
-	int n;
+	int n,a,m,ah=0;
 	cin>>n;
-	for(int i=0;i<n;i++)
+	for(a=1;a<=n;a++)
 	{
-		if 
+		ah+=a;
+		for(m=1;m<=n;m++)
+		{
+			if(ah-2*m==n)
+			{
+				cout<<m<<" "<<a;
+				return 0;
+			}
+		}
 	}
 	return 0;
 }
